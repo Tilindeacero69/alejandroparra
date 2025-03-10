@@ -1,0 +1,328 @@
+<html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honda Motos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .video-container {
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .button {
+            background-color: #ff0000;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #cc0000;
+        }
+        .list {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+        .map-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .model-info {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+        }
+        .model-info h3 {
+            margin-top: 0;
+        }
+    </style>
+    <script>
+        function toggleInfo(model) {
+            // Ocultar todos los apartados de información
+            const infos = document.querySelectorAll('.model-info');
+            infos.forEach(info => info.style.display = 'none');
+
+            // Mostrar el apartado de información correspondiente al modelo seleccionado
+            const info = document.getElementById(model);
+            info.style.display = 'block';
+
+
+
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenidos a la página de Honda Motos</h1>
+</header>
+
+<section>
+    <h2>Historia de Honda</h2>
+    <p>Honda Motor Co., Ltd. es una empresa japonesa multinacional conocida por fabricar motocicletas, automóviles y otros productos motorizados. Fundada en 1946 por Soichiro Honda, la compañía ha sido líder en innovación y tecnología en el mundo de las motos.</p>
+    
+    <h2>Modelos Populares</h2>
+    <ul class="list">
+        <li><a href="javascript:void(0);" onclick="toggleInfo('cbr1000rr')">Honda CBR1000RR</a></li>
+        <li><a href="javascript:void(0);" onclick="toggleInfo('crf450r')">Honda CRF450R</a></li>
+        <li><a href="javascript:void(0);" onclick="toggleInfo('cb500x')">Honda CB500X</a></li>
+        <li><a href="javascript:void(0);" onclick="toggleInfo('africaTwin')">Honda Africa Twin</a></li>
+    </ul>
+
+    <div id="cbr1000rr" class="model-info">
+        <h3>Honda CBR1000RR</h3>
+        <p>La Honda CBR1000RR es una motocicleta deportiva de alto rendimiento, diseñada para ofrecer una experiencia de conducción emocionante y precisa. Con un motor de 999 cc y tecnología avanzada de suspensión y frenos, esta moto es ideal para los pilotos que buscan velocidad y control.</p>
+        <img src="C:\Users\super\Desktop\TIC PAGINA WEB\Videos e imagenes\Honda_CBR1000RR-R_SP_2021_1000_0001-551x551.webp" width=300px alt="Honda CBR1000RR">
+    </div>
+
+    <div id="crf450r" class="model-info">
+        <h3>Honda CRF450R</h3>
+        <p>La Honda CRF450R es una moto de motocross de alto rendimiento, construida para resistir condiciones extremas en terrenos difíciles. Con un motor potente y un chasis ligero, esta moto es ideal para los pilotos de motocross profesionales y aficionados.</p>
+        <img src="C:\Users\super\Desktop\TIC PAGINA WEB\Videos e imagenes\Honda_CRF450R_2021_1000_0001.jpg" alt="Honda CRF450R" width=300px>
+    </div>
+
+    <div id="cb500x" class="model-info">
+        <h3>Honda CB500X</h3>
+        <p>La Honda CB500X es una moto versátil y accesible, ideal para aquellos que buscan una moto para viajes largos y aventuras en carretera. Su motor de 471 cc y su diseño ergonómico la hacen ideal para los motociclistas de todos los niveles.</p>
+        <img src="C:\Users\super\Desktop\TIC PAGINA WEB\Videos e imagenes\Honda_CB_500_X_2018_1000_0001.jpg" alt="Honda CB500X" width=300px>
+    </div>
+
+    <div id="africaTwin" class="model-info">
+        <h3>Honda Africa Twin</h3>
+        <p>La Honda Africa Twin es una moto de aventura diseñada para afrontar tanto carreteras pavimentadas como terrenos off-road. Con su motor de 1,000 cc y una suspensión de largo recorrido, es perfecta para aventuras largas y desafiantes.</p>
+        <img src="C:\Users\super\Desktop\TIC PAGINA WEB\Videos e imagenes\Honda_Africa_Twin_Adventure_Sports_ES_2024_1000_0001.jpg" alt="Honda Africa Twin" width=300px>
+    </div>
+
+    <h2>Video Promocional</h2>
+    <div class="video-container">
+        <iframe width="560" height="315" src="C:\Users\super\Desktop\TIC PAGINA WEB\Videos e imagenes\Video de WhatsApp 2025-03-01 a las 22.17.23_eb56443c.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width=300px heigth=100px align= center></iframe>
+    </div>
+
+    <h2>¿Dónde Comprar?</h2>
+    <p>Encuentra tu distribuidor más cercano para comprar motos Honda. Haz clic en el siguiente botón para acceder al mapa de distribuidores.</p>
+    <button class="button" onclick="window.location.href='https://www.honda.com.mx/dealers';">Ver distribuidores</button>
+
+    <h2>Mapa de ubicación</h2>
+    <div class="map-container">
+         <iframe src="https://www.google.com/maps/search/honda+motos+ticul/@20.3963265,-89.5339466,17z?entry=ttu&g_ep=EgoyMDI1MDIyNi4xIKXMDSoASAFQAw%3D%3D" width="640" height="480"></iframe>
+    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honda Motos - Carrusel de Imágenes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        .carousel-container {
+            width: 80%;
+            margin: 20px auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .carousel-images {
+            display: flex;
+            animation: slide 30s infinite linear;
+        }
+
+        .carousel-images img {
+            width: 100%;
+            height: auto;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(-100%);
+            }
+            50% {
+                transform: translateX(-200%);
+            }
+            75% {
+                transform: translateX(-300%);
+            }
+            100% {
+                transform: translateX(-400%);
+            }
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+
+<section>
+   
+
+
+<section>
+<h2>Galería de Imágenes</h2>
+
+    <!-- Carrusel de imágenes con animación automática -->
+    <div class="carousel-container">
+        <div class="carousel-images">
+            <img src="C:\Users\super\Desktop\TIC PAGINA WEB\Videos e imagenes\Banner_DESKTOP-FLOTILLA.jpg" alt="Honda CBR1000RR" width=300px height=300px>
+            <img src="C:\Users\super\Desktop\TIC PAGINA WEB\Videos e imagenes\Banner_DESKTOP-MasterXR150L-2025.jpg" alt="Honda CBR1000RR" width=300px>
+            <img src="C:\Users\super\Desktop\TIC PAGINA WEB\Videos e imagenes\Banner_DESKTOP-MasterTRX250.jpg" alt="Honda CBR1000RR" width=300px>
+<img src="C:\Users\super\Desktop\TIC PAGINA WEB\Videos e imagenes\Banner_WEBDESKTOP-Master-CB650R-.jpg" alt="Honda CBR1000RR" width=300px>
+            <img src"C:\Users\super\Desktop\TIC PAGINA WEB\Videos e imagenes\Banner_DESKTOP-MasterTRX250.jpg" alt="Honda CBR1000RR" width=300px>
+            <img src="C:\Users\super\Desktop\TIC PAGINA WEB\Videos e imagenes\Banner_DESKTOP-MasterCB350.jpg" alt="Honda CBR1000RR"width=300px>
+<img src="C:\Users\super\Desktop\TIC PAGINA WEB\Videos e imagenes\descarga (3).jpeg" alt="Honda CBR1000RR" width=300px>
+
+
+</section>
+
+<footer>
+    <p>&copy; 2025 Honda Motos. Todos los derechos reservados.</p>
+</footer>
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .moto {
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .moto img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>Menú de Motos Honda</h1>
+<div class="menu">
+    <div class="moto">
+        <h2>Honda CB190R</h2>
+        <p>Motocicleta deportiva con motor de 184.4 cc, ideal para la ciudad.</p>
+        <img src="C:\Users\super\Desktop\TIC PAGINA WEB\Videos e imagenes\honda cb190r.jpeg" alt="Honda CB190R">
+     
+        <h2>CB300F TWISTER</h2>
+        <p>Una moto de diseño deportivo, excelente desempeño y completamente avanzada para el mercado urbano.</p>
+        <img src="C:\Users\super\Desktop\TIC PAGINA WEB\Videos e imagenes\honda cb300f.jpg" alt="Honda CB190R">
+
+
+<h2>NT1100D</h2>
+<p>La NT1100D cuenta con un potente motor bicilíndrico y un diseño aerodinámico que ofrece una auténtica comodidad de viaje y potencial deportivo.</p>
+
+        <img src="C:\Users\super\Desktop\TIC PAGINA WEB\Videos e imagenes\honda nt1100.jpg" alt="Honda CB190R">
+
+        <h2>XR190L</h2>
+        <p>Incrementa tu emoción. Gracias a su cómoda suspensión y alto rendimiento, experimentarás todo el poder de sus 184.4cc.</p>
+        <img src="C:\Users\super\Desktop\TIC PAGINA WEB\Videos e imagenes\honda xr190l" alt="Honda CB190R">
+
+
+    </div>
+    <div class="moto">
+        <h2>Honda CB650 E-Clutch</h2>
+<p>La nueva CB650R E-CLUTCH con su característico rendimiento deportivo y un diseño estilizado y aerodinámico, está listo para la aventura.</p>
+        <img src="C:\Users\super\Desktop\TIC PAGINA WEB\Videos e imagenes\cb600 e-clutch.jpeg" alt="Honda CBR1000RR">
+
+        <h2>GL1800 GOLD WING</h2>
+        <p>La Honda Goldwing es la moto por excelencia para hacer grandes viajes, diseñada por a para disfrutar de la carretera tanto el piloto como el pasajero</p>
+<img src="C:\Users\super\Desktop\TIC PAGINA WEB\Videos e imagenes\gold wing 1800" alt="Honda CB650r e-clucht">
+
+      <h2>REBEL 1100</h2>
+<p>La Rebel 1100 está diseñada para lograr una conducción apasionante, con un potente motor y rendimiento de conducción.</p>
+        <img src="C:\Users\super\Desktop\TIC PAGINA WEB\Videos e imagenes\honda rebel 1100" alt="Honda CB650r e-clucht">
+
+
+        <h2>CB350</h2>
+        <p>La nueva CB350 combina el diseño clásico con la tecnología más moderna y la mejor seguridad y desempeño.</p> 
+        <img src="C:\Users\super\Desktop\TIC PAGINA WEB\Videos e imagenes\cb350" alt="Honda CBR1000RR">
+    </div>
+    <div class="moto">
+        <h2>Honda CB125F Twister</h2>
+        <p>Motocicleta económica con motor de 124.9 cc, ideal para principiantes.</p>
+        <img src="C:\Users\super\Desktop\TIC PAGINA WEB\Videos e imagenes\cb125f" alt="Honda CB125F Twister">
+
+<h2>CB160F</h2>
+<p>Con un potente motor, gran estabilidad, y un mayor agarre, esta motocicleta te llevará a estar siempre al frente.</p>
+        <img src="C:\Users\super\Desktop\TIC PAGINA WEB\Videos e imagenes\CB160F.png" alt="Honda CB125F Twister">
+
+<h2>NAVI110</h2>
+<p>Se utiliza la plataforma de un scooter para el diseño de este vehículo pero se combina con las características de una motocicleta, lo que lo convierte en un vehículo Crossover, es decir es el resultado de la mezcla de lo mejor de ambos segmentos.</p>
+        <img src="C:\Users\super\Desktop\TIC PAGINA WEB\Videos e imagenes\honda navi110.png" alt="Honda CB125F Twister">
+
+<h2>CBF150S</h2>
+<P>Sin duda, esta motocicleta será tu mejor herramienta de trabajo.</P> 
+ <img src="C:\Users\super\Desktop\TIC PAGINA WEB\Videos e imagenes\honda cb150s.jpg" alt="Honda CB125F Twister">
+
+    </div>
+</div>
+
+</body>
+</html>
